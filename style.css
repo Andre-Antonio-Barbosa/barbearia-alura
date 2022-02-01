@@ -1,12 +1,51 @@
 body {
-    background: #cccccc;
+   
+}
+
+#banner {
+    width: 100%;
+}
+
+.principal{
+    background:#cccccc;
+    padding: 20px; /*definindo espaçamento interno entra a barra de rolagem da pagina e o conteudo*/
+}
+
+.principal{
+    padding-left: 20px; /*espaçamento a esquerda - colocando o conteudo principal a esquerda no navegador/web.*/
+}
+
+.titulo-centralizado { /* Para centralizar uma tag no HTML intregando ao CSS usar a propriedade text-align*/
+    text-align: center;
 }
 
 p {
     text-align: center;
 }
 
+#missao {
+    font-size: 20px;
+}
+
 em strong {
     color: #ff0000;
 }
 
+.itens { /*Esta propriedade dará o estilo itálico a fonte, estilando com CSS*/
+    font-style: italic;
+}
+
+.beneficios{ 
+    background: #ffffff;
+}
+
+ul{
+    display: inline-block; /* centraliza o bloco(imagem) ao lado da lista, depois testas os outros display*/
+    vertical-align: top;   /*Joga a lista de itens para acima ao lado da imagem*/
+    width: 20%;   /*ajustando a largura dentralizada dentro da foto. página*/
+    margin-right: 15%; /*ajustando o espaçamento a direita da foto junto a página*/
+}
+
+.imagembeneficios{
+    width: 50%; /*ajustando a largura da foto*/
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,26 +10,40 @@
 </head>
 
 <body>
-    <h1 style="text-align: center;">Barbearia</h1>
+    <header>
+        <h1 class="titulo-principal">Barbearia Alura</h1>
+    </header>
+    <img id="banner" src="img/banner.jpg">
+    <div class="principal">
+        <h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
 
-    <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o <br> 
-    que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia<br> 
-    Alura já é destaque na cidade e conquista novos clientes a cada dia</p>
+        <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor 
+        para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista <br>
+        novos clientes a cada dia</p>
 
-    <!--Para centralizar o conteúdo ao centro, deve se usar a tag CSS--style="text-align": center-->
+        <!--Para centralizar o conteúdo ao centro, deve se usar a tag CSS--style="text-align": center-->
+        
+        <p id="missao"><em>Nossa missão é:<strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
+        <!--usando mais de uma propriedade CSS dentro de uma tag HTML-->
+        <!--a tag <Style: da o estilo a página e ="font-size" aumenta o tamanho da fonte-->
+        <!--por padrão o tamanho normal de uma fonte web é de 16pixes.-->
 
-    <p style="font-size: 20px;"><em>Nossa missão é:<strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
-    <!--usando mais de uma propriedade CSS dentro de uma tag HTML-->
-    <!--a tag <Style: da o estilo a página e ="font-size" aumenta o tamanho da fonte-->
-    <!--por padrão o tamanho normal de uma fonte web é de 16pixes.-->
+        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda.  
+        O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação 
+        dos nossos clientes.</p>
+    </div>
+    <!--crie uma classe chamada beneficios, a fim de estilar toda a classe beneficios, assim me permitirá a dar estilo no CSS a esta classe beneficio-->
+    <div class="beneficios"> 
+    <h3 class="titulo-centralizado">Benifícios</h3>
 
-    <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. <br> 
-    O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação<br>
-    dos nossos clientes.</p>
+        <ul> <!--Propriedade class no CSS usado para dar estilo em todos os elementos de uma única vez.-->
+        <li class="itens">Atendimento ao Clientes</li>
+        <li class="itens">Espaço diferenciado</li>
+        <li class="itens">Localização</li>
+        <li class="itens">Profissionais Qualificados</li> 
+        </ul>
 
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex laborum facere <br> 
-    accusantium nulla inventore veniam eum unde rem blanditiis est voluptatibus nam  <br>
-    temporibus, quod corrupti et nemo ipsam necessitatibus tenetur.
-
+        <img src="img/beneficios.jpg" class="imagembeneficios">
+    </div>        
 </body>
 </html>
