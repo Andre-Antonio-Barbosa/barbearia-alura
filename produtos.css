@@ -21,6 +21,12 @@ nav li{
     /*espaçamento entra as letras, usado um paramentro para espaçamento a esquerda*/
 }
 
+nav a:hover{ /*Tag (:houver) concede a estilange ao elemento, assim quando passar o mouse se o elemento(Item), o CSS aplica uma cor*/ 
+    color: #c78c19; 
+    text-decoration: underline; 
+    /*sublinhando o elemento*/
+}
+
 nav a{
     text-transform: uppercase; 
     /*Para que visualvemente as letras apareçam em maiuscula, sem que a mesma seja 
@@ -55,6 +61,29 @@ nav a{
     border-radius: 10px;
 }
 
+.produtos li:hover{
+    border-color: #c78c19 ; /*mexendo na cor da borda*/
+
+}
+
+.produtos li:active{
+    border-color: #088c19;
+} 
+
+/* --.produtos li:active
+Tem a ação de aplicar uma cor quando com o mouse for aplicado, clicado sobre o emeneto
+sendo assim, quando clicar sobre o Item, a cor muda.*/
+
+.produtos li:hover  h2{
+    font-size: 34px;
+}
+
+
+/*--.produtos li:hover  h2
+Quando o mouse passar (houver) sobre os produtos (li)listas de produtos, irá mudar aplicar
+a letra de 40x.
+*/
+
 .produtos h2{
     font-size: 30px;
     font-weight: bold;
@@ -67,6 +96,17 @@ nav a{
 .produto-preco {
     font-size: 22px;
     font-weight: bold;
-    margin: 10px 0 0;
     margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: #CCCCCC;
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
 }
