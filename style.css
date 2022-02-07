@@ -1,51 +1,138 @@
-body {
-   
+header{
+    background: #BBBBBB;
+    padding: 20px;
 }
 
-#banner {
-    width: 100%;
+.caixa {
+    position: relative; /*posicionando o menu mas acima*/
+    width: 940px; /*ajustando o tamanho caixa de menu*/
+    margin: 0 auto ; /*parametro para centralizar a caixa*/
 }
 
-.principal{
-    background:#cccccc;
-    padding: 20px; /*definindo espaçamento interno entra a barra de rolagem da pagina e o conteudo*/
+nav{
+    position: absolute; /*Posiciono o elemento em qualquer lugar da página*/
+    top: 110px; /*Posicionando no top com 0 espaço*/
+    right: 0; /*Posicionando a direita igual a zero.*/
 }
 
-.principal{
-    padding-left: 20px; /*espaçamento a esquerda - colocando o conteudo principal a esquerda no navegador/web.*/
+nav li{
+    display: inline;     /* deixando a estrutura na linha horizontal*/
+    margin: 0 0 0 15px;  
+    /*espaçamento entra as letras, usado um paramentro para espaçamento a esquerda*/
 }
 
-.titulo-centralizado { /* Para centralizar uma tag no HTML intregando ao CSS usar a propriedade text-align*/
+nav a:hover{ /*Tag (:houver) concede a estilange ao elemento, assim quando passar o mouse se o elemento(Item), o CSS aplica uma cor*/ 
+    color: #c78c19; 
+    text-decoration: underline; 
+    /*sublinhando o elemento*/
+}
+
+nav a{
+    text-transform: uppercase; 
+    /*Para que visualvemente as letras apareçam em maiuscula, sem que a mesma seja 
+    alterada no Html, somente alterar de forma visual via CSS, usar a propriedade acima */
+
+    color: #000000; /*mudando a cor das letras*/
+    font-weight: bold; 
+    /*mudando o peso da fonte, para negrito, lembrando que nada alterado no HTML, somente
+    em estilagem no CSS*/
+
+    font-size: 22px;
+    text-decoration: none; /*usada para retirar a sublinhamento do texto*/
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0; /*espaçamento*/
+}
+
+
+.produtos li{
+    display: inline-block;
+    text-align: center; /*centralizando*/
+    width: 30%; /*distribuição da imagens produtos*/
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;  
+    /*espaçamento lateral, esteja dentro do percentual, usar a propriedade chamada*/
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.produtos li:hover{
+    border-color: #c78c19 ; /*mexendo na cor da borda*/
+
+}
+
+.produtos li:active{
+    border-color: #088c19;
+} 
+
+/* --.produtos li:active
+Tem a ação de aplicar uma cor quando com o mouse for aplicado, clicado sobre o emeneto
+sendo assim, quando clicar sobre o Item, a cor muda.*/
+
+.produtos li:hover  h2{
+    font-size: 34px;
+}
+
+
+/*--.produtos li:hover  h2
+Quando o mouse passar (houver) sobre os produtos (li)listas de produtos, irá mudar aplicar
+a letra de 40x.
+*/
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
     text-align: center;
+    background: #CCCCCC;
+    padding: 40px 0;
 }
 
-p {
-    text-align: center;
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
 }
 
-#missao {
+main {
+    width: 940px; /*Mantive o padrão da altura no qual eu já venho deixando e margem também*/
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0; /*aumentando a margim do conteúdo*/
+}
+
+form label {
+    display: block;
     font-size: 20px;
+    margin: 0 0 10px; /*Espaço entre a (label) estiqueta e o campo que vem logo abaixo dela*/
+    /*Todos os label(etiqueta dentro do meu formulário seja block, seja (quebrado
+    para a linha de baixa)*/
 }
 
-em strong {
-    color: #ff0000;
-}
-
-.itens { /*Esta propriedade dará o estilo itálico a fonte, estilando com CSS*/
-    font-style: italic;
-}
-
-.beneficios{ 
-    background: #ffffff;
-}
-
-ul{
-    display: inline-block; /* centraliza o bloco(imagem) ao lado da lista, depois testas os outros display*/
-    vertical-align: top;   /*Joga a lista de itens para acima ao lado da imagem*/
-    width: 20%;   /*ajustando a largura dentralizada dentro da foto. página*/
-    margin-right: 15%; /*ajustando o espaçamento a direita da foto junto a página*/
-}
-
-.imagembeneficios{
-    width: 50%; /*ajustando a largura da foto*/
+form input {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px; /*espaçamento, aumentando o campo do input para digitar*/
+    width: 50%; /*Altera a largura o tamanho do campo aonde se escreve no formulário*/
+    /*Todos os input(dentro do meu formulário seja block, seja (quebrado
+    para a linha de baixa)*/
 }
