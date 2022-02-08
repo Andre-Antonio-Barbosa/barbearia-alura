@@ -35,6 +35,28 @@
             <label for="telefone">Telefone</label>
             <input type="text" id="telefone">
 
+
+            
+            <!--Textarea é uma tag de conteúdo, usada como uma caixa para que possa descrever a mensagem-->
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="70" rows="10" id="mensagem"></textarea>
+
+            <div>
+                <p>Como prefere o nosso contato?</p>
+                <label for="radio-email">Email</label>
+                <input type="radio" name="contato" value="email" id="radio-email"> 
+
+                <label for="radio-telefone">Telefone</label>
+                <input type="radio" name="contato" value="telefone" id="radio-telefone">
+
+                <label for="radio-whatsApp">WhatsApp</label>
+                <input type="radio" name="contato" value="WhatsApp" id="radio-whatsApp">
+                <!--name = "contato" faz com que quando click em um item, automaticamente deseleciona o outro item-->
+            </div>    
+
+            <label><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+            <!--Criando o input dentro do <labe> cria uma caixa veja colocado ao sumit-->
+
             <input type="submit" value="Enviar formulário">
         </form>
     </main>
