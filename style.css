@@ -159,3 +159,18 @@ form label, form legend {
     transform: scale(1.2); /* Esta propriedade, faz com que quando eu passo o mouse por cima do botão enviar,
     aumenta a letra (enviar)*/
 }
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead { /*Tag de cabeçalho da minha tabela*/
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th { /*Tag da célula dentro do cabeçalho*/
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
