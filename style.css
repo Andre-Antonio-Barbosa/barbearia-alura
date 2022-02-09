@@ -120,7 +120,7 @@ form {
     margin: 40px 0; /*aumentando a margim do conteúdo*/
 }
 
-form label {
+form label, form legend {
     display: block;
     font-size: 20px;
     margin: 0 0 10px; /*Espaço entre a (label) estiqueta e o campo que vem logo abaixo dela*/
@@ -128,11 +128,34 @@ form label {
     para a linha de baixa)*/
 }
 
-form input {
+.input-padrao {
     display: block;
     margin: 0 0 20px;
     padding: 10px 25px; /*espaçamento, aumentando o campo do input para digitar*/
     width: 50%; /*Altera a largura o tamanho do campo aonde se escreve no formulário*/
     /*Todos os input(dentro do meu formulário seja block, seja (quebrado
     para a linha de baixa)*/
+}
+
+.checkbox {
+    margin: 20px 0 ; /*espaçando a margin do checkbox do submit*/
+}
+
+.enviar {
+    width: 40%; /*Largura*/
+    padding: 15px 0; /*Espaçamento*/
+    background: orange; 
+    color: white;
+    font-weight: bold; /*Fonte em Negrito*/
+    font-size: 18px;
+    border: none; /*Removendo a bordar*/
+    border-radius: 5px; /*canto da bordar arredondado em 5px*/
+    transition: 1s all; /*quando passo mouse, a cor muda em 1s(esta propriedade faz com controlamos o tempo para esta alteração)*/
+    cursor: pointer; /*Permite que quando passo o mouse, a seta vira uma mãozinha para mostra que é clicavél*/
+}
+
+.enviar:hover{
+    background: darkorange; /*Quando passa o mouse por cima, muda a cor */
+    transform: scale(1.2); /* Esta propriedade, faz com que quando eu passo o mouse por cima do botão enviar,
+    aumenta a letra (enviar)*/
 }

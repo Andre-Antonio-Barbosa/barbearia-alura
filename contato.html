@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="caixa">
-            <h1><img src="imag/logo.png"></h1>
+            <h1><img src="imag/logo.png" alt="Logo da Barbearia Alura"></h1>
 
             <nav>
                 <ul>
@@ -27,42 +27,48 @@
     <main>
         <form>
             <label for="nomesobrenome">Nome e Sobrenome</label>
-            <input type="text" id="nomesobrenome">
+            <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="seuemail@dominio.com">
 
             <label for="email">Email</label>
-            <input type="text" id="email">
+            <input type="email" id="email" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
 
             <label for="telefone">Telefone</label>
-            <input type="text" id="telefone">
+            <input type="tel" id="telefone" class="input-padrao" required>
 
 
             
             <!--Textarea é uma tag de conteúdo, usada como uma caixa para que possa descrever a mensagem-->
             <label for="mensagem">Mensagem</label>
-            <textarea cols="70" rows="10" id="mensagem"></textarea>
+            <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
 
-            <div>
-                <p>Como prefere o nosso contato?</p>
-                <label for="radio-email">Email</label>
-                <input type="radio" name="contato" value="email" id="radio-email"> 
-
-                <label for="radio-telefone">Telefone</label>
-                <input type="radio" name="contato" value="telefone" id="radio-telefone">
-
-                <label for="radio-whatsApp">WhatsApp</label>
-                <input type="radio" name="contato" value="WhatsApp" id="radio-whatsApp">
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                 
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                
+                <label for="radio-whatsApp"><input type="radio" name="contato" value="WhatsApp" id="radio-whatsApp" checked>WhatsApp</label>  
                 <!--name = "contato" faz com que quando click em um item, automaticamente deseleciona o outro item-->
-            </div>    
+            </fieldset>  
+            
+            <fieldset>
+                <legend>Qual o horário prefere ser atendido?</legend>
+                <select>
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select> <!--Toda da tag de select tem as option dentro-->
+            </fieldset>
 
-            <label><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
             <!--Criando o input dentro do <labe> cria uma caixa veja colocado ao sumit-->
 
-            <input type="submit" value="Enviar formulário">
+            <input type="submit" value="Enviar formulário" class="enviar">
         </form>
     </main>
 
     <footer> <!--Tag do rodopé-->
-        <img src="imag/logo-branco.png">
+        <img src="imag/logo-branco.png" alt="Logo da Barbearia Alura">
         <p>Copyright Barbearia Alura - 2019</p>
         <p class="Copyrigth">&copy; Copyrigth</p>
     </footer>
