@@ -99,11 +99,12 @@ a letra de 40x.
     margin-top: 10px;
 }
 
-footer{
+footer {
     text-align: center;
-    background: #CCCCCC;
-    padding: 40px 0;
+    background: url("imag/bg.jpg");
+    padding: 40px 0; /*-> separando (espaçamento) entre o conteúdo e margem do rodapé.*/
 }
+
 
 .copyright {
     color: #FFFFFF;
@@ -174,3 +175,48 @@ td, th { /*Tag da célula dentro do cabeçalho*/
     border: 1px solid #000000;
     padding: 8px 15px;
 }
+
+/*** CSS da página inicial ***/
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center; /**alinhando ao centro**/
+    font-size: 2em; /* em -> significa que o tamanho da fonte ficará o 
+    dobro da fonte que você está escolhendo, considerando que o tamanho padrão de uma
+    fonte, é de 16px**/
+
+    margin: 0 0 1em; /**espaçamento do conteúdo da margim/**/
+    clear: left; /*Permite limpar todo a configuração que foi altera, mexida quando
+    estilamos a propriedade **float**/
+}
+
+.principal p {
+    margin: 0 0 1em; /*espaçamento em dobro 1em para padronizar e deixar igual*/
+}
+
+/*Estou dizendo para o CSS que toda vez que o font estiver com a tag strong
+deixar a fonte em negrito*/
+.principal strong {
+    font-weight: bold;
+}
+
+/**Estou dizendo para o CSS que toda vez que a fonte no HTML tiver a tag <em>
+deve deixar a fonte italico*/
+.principal em {
+    font-style: italic;
+}
+
+/*propriedade float, permite que a imagem(elemento) flutue suba*/
+.utensilios {
+    width: 120px; /*Mexendo no tamalho da imagem*/
+    float: left;
+    margin: 0 20px 20px 0;
+    /*margin 0 -> pra cima. -> 20px pra direita. -> 20px pra baixo. -> 0 para esquerda.*/
+}
+
+.imagembeneficios {
+    width: 60%;
+}
+
