@@ -25,13 +25,7 @@ nav li{
     /*espaçamento entra as letras, usado um paramentro para espaçamento a esquerda*/
 }
 
-nav a:hover{ /*Tag (:houver) concede a estilange ao elemento, assim quando passar o mouse se o elemento(Item), o CSS aplica uma cor*/ 
-    color: #c78c19; 
-    text-decoration: underline; 
-    /*sublinhando o elemento*/
-}
-
-nav a{
+nav a {
     text-transform: uppercase; 
     /*Para que visualvemente as letras apareçam em maiuscula, sem que a mesma seja 
     alterada no Html, somente alterar de forma visual via CSS, usar a propriedade acima */
@@ -44,6 +38,13 @@ nav a{
     font-size: 22px;
     text-decoration: none; /*usada para retirar a sublinhamento do texto*/
 }
+
+nav a:hover{ /*Tag (:houver) concede a estilange ao elemento, assim quando passar o mouse se o elemento(Item), o CSS aplica uma cor*/ 
+    color: #c78c19; 
+    text-decoration: underline; 
+    /*sublinhando o elemento*/
+}
+
 
 .produtos{
     width: 940px;
@@ -106,7 +107,8 @@ a letra de 40x.
 footer {
     text-align: center;
     background: url("imag/bg.jpg");
-    padding: 40px 0; /*-> separando (espaçamento) entre o conteúdo e margem do rodapé.*/
+    padding: 40px 0; 
+    /*-> separando (espaçamento) entre o conteúdo e margem do rodapé.*/
 }
 
 
@@ -117,8 +119,7 @@ footer {
 }
 
 main {
-    width: 940px; /*Mantive o padrão da altura no qual eu já venho deixando e margem também*/
-    margin: 0 auto;
+   
 }
 
 form {
@@ -128,7 +129,9 @@ form {
 form label, form legend {
     display: block;
     font-size: 20px;
-    margin: 0 0 10px; /*Espaço entre a (label) estiqueta e o campo que vem logo abaixo dela*/
+    margin: 0 0 10px; 
+    
+    /*Espaço entre a (label) estiqueta e o campo que vem logo abaixo dela*/
     /*Todos os label(etiqueta dentro do meu formulário seja block, seja (quebrado
     para a linha de baixa)*/
 }
@@ -137,7 +140,9 @@ form label, form legend {
     display: block;
     margin: 0 0 20px;
     padding: 10px 25px; /*espaçamento, aumentando o campo do input para digitar*/
-    width: 50%; /*Altera a largura o tamanho do campo aonde se escreve no formulário*/
+    width: 50%; 
+    
+    /*Altera a largura o tamanho do campo aonde se escreve no formulário*/
     /*Todos os input(dentro do meu formulário seja block, seja (quebrado
     para a linha de baixa)*/
 }
@@ -196,6 +201,14 @@ td, th { /*Tag da célula dentro do cabeçalho*/
     estilamos a propriedade **float**/
 }
 
+
+.principal {
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px; /*Mantive o padrão da altura no qual eu já venho deixando e margem também*/
+    margin: 0 auto;
+}
+
 .principal p {
     margin: 0 0 1em; /*espaçamento em dobro 1em para padronizar e deixar igual*/
 }
@@ -214,14 +227,40 @@ deve deixar a fonte italico*/
 
 /*propriedade float, permite que a imagem(elemento) flutue suba*/
 .utensilios {
-    width: 120px; /*Mexendo no tamalho da imagem*/
+    width: 120px;       /*Mexendo no tamalho da imagem*/
     float: left;
     margin: 0 20px 20px 0;
     /*margin 0 -> pra cima. -> 20px pra direita. -> 20px pra baixo. -> 0 para esquerda.*/
 }
 
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#fefefe, #888888);
+
+    /*Para criar o efeito gradiente(grade) deve se em background usar a propriedade
+    linear-gradient(as cores aqui dentro funciona assim, vai do larange até o azul
+    começa no item 0 laranja e termina no 100% em azul, no meio co caminho faz yma transição de cor
+    45deg -> siginifica a inclinação) 
+    radial-gradient(orange,blue, red); é uma inclinação de grade redonda */
+}
+
+
+.mapa-conteudo {
+    width: 940px; /*Mantive o padrão da altura no qual eu já venho deixando e margem também*/
+    margin: 0 auto;
+    /*ajustando o mapa e centralizando, criando uma class na tag e ajustando a imagem mapa*/
+}
+
+/*Deslocando a margem para baixo*/
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+
 .beneficios {
     padding: 3em 0;
+    background: #888888;
 }
 
 .conteudo-beneficos {
@@ -239,26 +278,20 @@ deve deixar a fonte italico*/
     line-height: 1.5 ; /*mexe na altura da linha, da um espaçamento entre as letras*/
 }
 
-.itens:first-child { /*pega de 2 em 2 seleciona*/
+.itens:first-child {    /*pega de 2 em 2 seleciona*/
     font-weight: bold; 
+
      /*Pega o primeiro item de todos os itens e classifica aquilo que quero fazer*/
     /**Pode se usar o last-child pegando o último elemento, ou nth-child(4)seleciona
     o quarto elemento*/
 }
 
-
-.imagem-beneficios {
-    width: 60%;
+.itens:before {
+    content: ;
 }
 
-.mapa {
-    padding: 3em 0;
-}
-
-/*Deslocando a margem para baixo*/
-.mapa p {
-    margin: 0 0 2em;
-    text-align: center;
+.itens:before {
+    content: "★";
 }
 
 .video {
