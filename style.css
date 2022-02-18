@@ -1,86 +1,104 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
-header{
-    background: #BBBBBB;
-    padding: 20px;
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
 }
 
 .caixa {
-    position: relative; /*posicionando o menu mas acima*/
-    width: 940px; /*ajustando o tamanho caixa de menu*/
-    margin: 0 auto ; /*parametro para centralizar a caixa*/
+	position: relative;      /*posicionando o menu mas acima*/
+	width: 940px;           /*ajustando o tamanho caixa de menu*/
+	margin: 0 auto;         /*parametro para centralizar a caixa*/
 }
 
-nav{
-    position: absolute; /*Posiciono o elemento em qualquer lugar da página*/
-    top: 110px; /*Posicionando no top com 0 espaço*/
-    right: 0; /*Posicionando a direita igual a zero.*/
+nav {
+	position: absolute;     /*Posiciono o elemento em qualquer lugar da página*/
+	top: 110px;             /*Posicionando no top com 0 espaço*/
+	right: 0;               /*Posicionando a direita igual a zero.*/
 }
 
-nav li{
-    display: inline;     /* deixando a estrutura na linha horizontal*/
-    margin: 0 0 0 15px;  
-    /*espaçamento entra as letras, usado um paramentro para espaçamento a esquerda*/
+nav li {
+	display: inline;        /* deixando a estrutura na linha horizontal*/
+	margin: 0 0 0 15px;     /*espaçamento entra as letras, usado um paramentro para espaçamento a esquerda*/
 }
 
 nav a {
-    text-transform: uppercase; 
+	text-transform: uppercase;
     /*Para que visualvemente as letras apareçam em maiuscula, sem que a mesma seja 
     alterada no Html, somente alterar de forma visual via CSS, usar a propriedade acima */
 
-    color: #000000; /*mudando a cor das letras*/
-    font-weight: bold; 
+	color: #000000; 
+    /*mudando a cor das letras*/
+
+	font-weight: bold;
     /*mudando o peso da fonte, para negrito, lembrando que nada alterado no HTML, somente
     em estilagem no CSS*/
 
-    font-size: 22px;
-    text-decoration: none; /*usada para retirar a sublinhamento do texto*/
+	font-size: 22px;
+
+	text-decoration: none;
+    /*usada para retirar a sublinhamento do texto*/
 }
 
-nav a:hover{ /*Tag (:houver) concede a estilange ao elemento, assim quando passar o mouse se o elemento(Item), o CSS aplica uma cor*/ 
-    color: #c78c19; 
-    text-decoration: underline; 
+
+
+/*Tag (:houver) concede a estilange ao elemento, assim quando passar o mouse se o 
+elemento(Item), o CSS aplica uma cor*/
+
+nav a:hover {
+	color: #C78C19;
+
+	text-decoration: underline;
     /*sublinhando o elemento*/
+
+
 }
 
+.produtos {
+	width: 940px;
+	margin: 0 auto;
 
-.produtos{
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px 0; /*espaçamento*/
+	padding: 50px 0;
+    /*espaçamento*/
 }
 
-
-.produtos li{
-    display: inline-block;
-    text-align: center; /*centralizando*/
-    width: 30%; /*distribuição da imagens produtos*/
-    vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;  
+.produtos li {
+	display: inline-block;      /*centralizando*/
+	text-align: center;         /*distribuição da imagens produtos*/
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
     /*espaçamento lateral, esteja dentro do percentual, usar a propriedade chamada*/
-    border: 2px solid #000000;
-    border-radius: 10px;
+
+	border: 2px solid #000000;
+	border-radius: 10px;
 }
 
-.produtos li:hover{
-    border-color: #c78c19 ; /*mexendo na cor da borda*/
 
+
+
+
+.produtos li:hover {
+	border-color: #C78C19;
+    /*mexendo na cor da borda*/
 }
 
-.produtos li:active{
-    border-color: #088c19;
-} 
+.produtos li:active {
+	border-color: #088C19;	
+}
+
+
 
 /* --.produtos li:active
 Tem a ação de aplicar uma cor quando com o mouse for aplicado, clicado sobre o emeneto
 sendo assim, quando clicar sobre o Item, a cor muda.*/
 
-.produtos li:hover  h2{
-    font-size: 34px;
+.produtos li:hover h2 {
+	font-size: 34px;
 }
 
 
@@ -89,153 +107,168 @@ Quando o mouse passar (houver) sobre os produtos (li)listas de produtos, irá mu
 a letra de 40x.
 */
 
-.produtos h2{
-    font-size: 30px;
-    font-weight: bold;
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
 }
 
-.produto-descricao{
-    font-size: 18px;
+.produto-descricao {
+	font-size: 18px;
 }
 
 .produto-preco {
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 10px;
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
 }
 
 footer {
-    text-align: center;
-    background: url("imag/bg.jpg");
-    padding: 40px 0; 
+	text-align: center;
+	background: url("imag/bg.jpg");
+	padding: 40px 0;
     /*-> separando (espaçamento) entre o conteúdo e margem do rodapé.*/
 }
 
-
 .copyright {
-    color: #FFFFFF;
-    font-size: 13px;
-    margin: 20px 0 0;
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
 }
 
 main {
-   
+	
 }
 
 form {
-    margin: 40px 0; /*aumentando a margim do conteúdo*/
+	margin: 40px 0;
+    /*aumentando a margim do conteúdo*/
 }
 
 form label, form legend {
-    display: block;
-    font-size: 20px;
-    margin: 0 0 10px; 
-    
+	display:block;
+	font-size: 20px;
+	margin: 0 0 10px;
+
     /*Espaço entre a (label) estiqueta e o campo que vem logo abaixo dela*/
     /*Todos os label(etiqueta dentro do meu formulário seja block, seja (quebrado
     para a linha de baixa)*/
 }
 
 .input-padrao {
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px; /*espaçamento, aumentando o campo do input para digitar*/
-    width: 50%; 
-    
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;     /*espaçamento, aumentando o campo do input para digitar*/
+	width: 50%; 
+
     /*Altera a largura o tamanho do campo aonde se escreve no formulário*/
     /*Todos os input(dentro do meu formulário seja block, seja (quebrado
     para a linha de baixa)*/
 }
 
 .checkbox {
-    margin: 20px 0 ; /*espaçando a margin do checkbox do submit*/
+	margin: 20px 0;
+    /*espaçando a margin do checkbox do submit*/
 }
 
 .enviar {
-    width: 40%; /*Largura*/
-    padding: 15px 0; /*Espaçamento*/
-    background: orange; 
-    color: white;
-    font-weight: bold; /*Fonte em Negrito*/
-    font-size: 18px;
-    border: none; /*Removendo a bordar*/
-    border-radius: 5px; /*canto da bordar arredondado em 5px*/
-    transition: 1s all; /*quando passo mouse, a cor muda em 1s(esta propriedade faz com controlamos o tempo para esta alteração)*/
-    cursor: pointer; /*Permite que quando passo o mouse, a seta vira uma mãozinha para mostra que é clicavél*/
+	width:40%;                  /*Largura*/
+	padding: 15px 0;           /*Espaçamento*/
+	background: orange;     /*Fonte em Negrito*/
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;           /*Removendo a bordar*/
+	border-radius: 5px;     /*canto da bordar arredondado em 5px*/
+    transition: 1s all;     /*quando passo mouse, a cor muda em 1s(esta propriedade faz com controlamos o tempo para esta alteração)*/
+    cursor: pointer;        /*Permite que quando passo o mouse, a seta vira uma mãozinha para mostra que é clicavél*/
 }
 
 .enviar:hover{
-    background: darkorange; /*Quando passa o mouse por cima, muda a cor */
-    transform: scale(1.2); /* Esta propriedade, faz com que quando eu passo o mouse por cima do botão enviar,
+    background: darkorange;     /*Quando passa o mouse por cima, muda a cor */
+
+    transform: scale(1.2); 
+    /* Esta propriedade, faz com que quando eu passo o mouse por cima do botão enviar,
     aumenta a letra (enviar)*/
 }
 
+
+/*Tag de cabeçalho da minha tabela*/
 table {
-    margin: 20px 0 40px;
+	margin: 20px 0 40px;
 }
 
-thead { /*Tag de cabeçalho da minha tabela*/
-    background: #555555;
-    color: white;
-    font-weight: bold;
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
 }
 
-td, th { /*Tag da célula dentro do cabeçalho*/
-    border: 1px solid #000000;
-    padding: 8px 15px;
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
 }
 
-/*** CSS da página inicial ***/
+
+/* css da página inicial */
 .banner {
-    width: 100%;
+	width:100%;
 }
 
 .titulo-principal {
-    text-align: center; /**alinhando ao centro**/
-    font-size: 2em; /* em -> significa que o tamanho da fonte ficará o 
+    text-align: center;         /**alinhando ao centro**/
+
+    font-size: 2em;     
+    /* em -> significa que o tamanho da fonte ficará o 
     dobro da fonte que você está escolhendo, considerando que o tamanho padrão de uma
     fonte, é de 16px**/
 
-    margin: 0 0 1em; /**espaçamento do conteúdo da margim/**/
-    clear: left; /*Permite limpar todo a configuração que foi altera, mexida quando
+    margin: 0 0 1em;    /**espaçamento do conteúdo da margim/**/
+
+    clear: left;    
+    /*Permite limpar todo a configuração que foi altera, mexida quando
     estilamos a propriedade **float**/
 }
-
 
 .principal {
     padding: 3em 0;
     background: #fefefe;
-    width: 940px; /*Mantive o padrão da altura no qual eu já venho deixando e margem também*/
+    width: 940px;           /*Mantive o padrão da altura no qual eu já venho deixando e margem também*/
     margin: 0 auto;
 }
 
+
 .principal p {
-    margin: 0 0 1em; /*espaçamento em dobro 1em para padronizar e deixar igual*/
+    margin: 0 0 1em;        /*espaçamento em dobro 1em para padronizar e deixar igual*/
 }
+
+
 
 /*Estou dizendo para o CSS que toda vez que o font estiver com a tag strong
 deixar a fonte em negrito*/
+
 .principal strong {
     font-weight: bold;
 }
 
+
 /**Estou dizendo para o CSS que toda vez que a fonte no HTML tiver a tag <em>
 deve deixar a fonte italico*/
+
 .principal em {
     font-style: italic;
 }
 
 /*propriedade float, permite que a imagem(elemento) flutue suba*/
 .utensilios {
-    width: 120px;       /*Mexendo no tamalho da imagem*/
-    float: left;
-    margin: 0 20px 20px 0;
+	width: 120px;   /*Mexendo no tamalho da imagem*/
+	float: left;
+	margin: 0 20px 20px 0;
     /*margin 0 -> pra cima. -> 20px pra direita. -> 20px pra baixo. -> 0 para esquerda.*/
 }
 
 .mapa {
-    padding: 3em 0;
-    background: linear-gradient(#fefefe, #888888);
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE, #888888);
 
     /*Para criar o efeito gradiente(grade) deve se em background usar a propriedade
     linear-gradient(as cores aqui dentro funciona assim, vai do larange até o azul
@@ -245,58 +278,64 @@ deve deixar a fonte italico*/
 }
 
 
+
 .mapa-conteudo {
-    width: 940px; /*Mantive o padrão da altura no qual eu já venho deixando e margem também*/
-    margin: 0 auto;
+	width: 940px; 
+    /*Mantive o padrão da altura no qual eu já venho deixando e margem também*/
+
+	margin: 0 auto;
     /*ajustando o mapa e centralizando, criando uma class na tag e ajustando a imagem mapa*/
 }
 
 /*Deslocando a margem para baixo*/
 .mapa p {
-    margin: 0 0 2em;
-    text-align: center;
+	margin: 0 0 2em;
+	text-align: center;
 }
-
 
 .beneficios {
-    padding: 3em 0;
-    background: #888888;
+	padding: 3em 0;
+	background: #888888;
 }
 
-.conteudo-beneficos {
-    width: 640px;
-    margin: 0 auto;
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
 }
 
 .lista-beneficios {
-    width: 40%;
-    display: inline-block; /*irá manter um do lado do outro os itens da lista*/
-    vertical-align: top; /*Sobe o conteúdo para a parte de cima*/
+	width: 40%;
+	display: inline-block;
+    /*irá manter um do lado do outro os itens da lista*/
+
+	vertical-align: top;
+    /*Sobe o conteúdo para a parte de cima*/
 }
 
-.itens{
-    line-height: 1.5 ; /*mexe na altura da linha, da um espaçamento entre as letras*/
+.itens {            
+	line-height: 1.5;
+    /*mexe na altura da linha, da um espaçamento entre as letras*/
 }
 
-.itens:first-child {    /*pega de 2 em 2 seleciona*/
-    font-weight: bold; 
 
-     /*Pega o primeiro item de todos os itens e classifica aquilo que quero fazer*/
+/*pega de 2 em 2 seleciona*/
+.itens:first-child {
+	font-weight: bold;
+
+    /*Pega o primeiro item de todos os itens e classifica aquilo que quero fazer*/
     /**Pode se usar o last-child pegando o último elemento, ou nth-child(4)seleciona
     o quarto elemento*/
-}
-
-.itens:before {
-    content: ;
 }
 
 .itens:before {
     content: "★";
 }
 
-.video {
-    width: 560px;
-    margin: 2em auto; /*criando um pouco mais de espaço no vídeo*/
+.imagem-beneficios {
+	width: 60%;
 }
 
-
+.video {
+	width: 560px;
+	margin: 2em auto;
+}

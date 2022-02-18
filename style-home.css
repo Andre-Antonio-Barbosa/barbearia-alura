@@ -1,6 +1,3 @@
-body {
-   
-}
 
 #banner {
     width: 100%;
@@ -37,6 +34,7 @@ em strong {
 
 .beneficios{ 
     background: #ffffff;
+	padding: 20px
 }
 
 ul{
@@ -48,4 +46,3 @@ ul{
 
 .imagembeneficios{
     width: 50%; /*ajustando a largura da foto*/
-}
