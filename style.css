@@ -78,9 +78,11 @@ nav a:hover {
 	border-radius: 10px;
 }
 
-
-
-
+/* classifica o <p> filho direito da tag man usando da forma abaixo main>
+main >p{
+	background: red;
+}
+*/
 
 .produtos li:hover {
 	border-color: #C78C19;
