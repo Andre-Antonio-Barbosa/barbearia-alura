@@ -333,8 +333,17 @@ deve deixar a fonte italico*/
     content: "★";
 }
 
+/*Da ocapicidade a imagem, escurecendo a imagem em percentual*/
+
 .imagem-beneficios {
-	width: 60%;
+    width: 60%;
+    opacity: 0.3;
+	transition: 400ms;
+}
+
+.imagem-beneficios:hover {
+	opacity: 1;
+	/*quando passamos o mouse por cima da imagem aparece o sombreamente*/
 }
 
 .video {
