@@ -227,7 +227,7 @@ td, th {
     margin: 0 0 1em;    /**espaçamento do conteúdo da margim/**/
 
     clear: left;    
-    /*Permite limpar todo a configuração que foi altera, mexida quando
+    /*Permite limpar todo a configuração que foi alterada, mexida quando
     estilamos a propriedade **float**/
 
 	/*text-shadow: 2px 2px red ; /*Criando sombra no texto e aplicar cor,
@@ -356,3 +356,25 @@ deve deixar a fonte italico*/
 	width: 560px;
 	margin: 2em auto;
 }
+
+
+@media screen and (max-width: 480px) {
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto ;
+	}
+	h1 {
+		text-align: center;
+	}
+	nav {
+		position: static;
+	}
+	.lista-beneficios,.imagem-beneficios {
+		width: 100%; /*adaptando a página a efeito responsivo*/
+	}
+}
+
+/*
+a propriedade @media screen, permite que eu entregue ao usuário, um estilo diferente
+de page, ou seja, o @media screen irá pesquisar que em caso o meu usuário estiver com um 
+dispositivo aonde o tamanho da tela seja até 480px ele irá entregar o body o corpo de red, vermelho
+*/
